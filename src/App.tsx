@@ -43,7 +43,7 @@ function App() {
     <ContentfulLivePreviewProvider
       locale={locale}
       environment={environment}
-      targetOrigin="https://t5dnkz.csb.app/"
+      enableLiveUpdates
     >
       <Component {...data} locale={locale} />
     </ContentfulLivePreviewProvider>
