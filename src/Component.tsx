@@ -1,4 +1,4 @@
-import { useContentfulLiveUpdates } from "@contentful/live-preview/dist/react";
+import { useContentfulLiveUpdates } from "@contentful/live-preview/react";
 
 export default function Component({ locale = "en_US", ...props }) {
   const liveProps = useContentfulLiveUpdates(props, { locale });

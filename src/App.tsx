@@ -1,11 +1,10 @@
-import "./styles.css";
+import "./App.css";
 import { useState, useEffect } from "react";
+import { getEntry } from "./utils/contentful-client";
 import { ContentfulLivePreviewProvider } from "@contentful/live-preview/react";
-import { getEntry } from "./contentful-client";
-
 import Component from "./Component";
 
-export default function App() {
+function App() {
   const searchParams = new URLSearchParams(window.location.search);
   const id = searchParams.get("id");
   const space = searchParams.get("space");
@@ -50,3 +49,5 @@ export default function App() {
     </ContentfulLivePreviewProvider>
   );
 }
+
+export default App;
