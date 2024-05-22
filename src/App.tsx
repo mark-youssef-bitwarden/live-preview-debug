@@ -44,6 +44,7 @@ function App() {
       locale={locale}
       environment={environment}
       enableLiveUpdates
+      debugMode
     >
       <Component {...data} locale={locale} />
     </ContentfulLivePreviewProvider>
